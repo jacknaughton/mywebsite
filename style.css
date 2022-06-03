@@ -1,0 +1,236 @@
+* {
+  scroll-behavior: smooth;
+  color: #3C4043;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.button {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 6px 18px;
+  border: 2px solid #3c4043;
+  border-radius: 4px;
+  position: relative;
+}
+
+.button:active {
+  background: #3c4043;
+  color: #ffffff !important;
+}
+
+.button:hover {
+  background: #3c4043;
+  color: #ffffff !important;
+}
+
+nav {
+  display: none;
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+header .hero {
+  background-color: #E3FFE6;
+  border-radius: 28px;
+  padding: 30px;
+  -webkit-box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+header .hero h1 {
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 400;
+}
+
+header .hero h2 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+header .hero h3 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+section.portfolio {
+  margin-bottom: 50px;
+}
+
+section.portfolio h2 {
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 50px;
+}
+
+section.skills {
+  margin-bottom: 50px;
+}
+
+section.skills h2 {
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 50px;
+}
+
+section.skills .rounded-container {
+  padding: 100px 0;
+  background-color: #E7EBED;
+  border-radius: 28px;
+  margin: 12px 0;
+  -webkit-box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.3);
+  perspective: 800;
+  -moz-perspective: 800;
+  -webkit-perspective: 800;
+  transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  cursor: pointer;
+}
+
+section.skills .rounded-container img {
+  height: 75px;
+}
+
+section.skills .rounded-container.flipped {
+  transform: rotatey(-180deg);
+  -moz-transform: rotatey(-180deg);
+  -webkit-transform: rotatey(-180deg);
+}
+
+section.skills .rounded-container .face {
+  text-align: center;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+section.skills .rounded-container .front {
+  display: block;
+}
+
+section.skills .rounded-container.flipped .front {
+  display: none;
+}
+
+section.skills .rounded-container .back {
+  transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  display: none;
+}
+
+section.skills .rounded-container.flipped .back {
+  display: block;
+}
+
+.experinces h2 {
+  margin-bottom: 50px;
+}
+
+.experinces .full-width-colour {
+  background-color: #E9E3DC;
+  border-radius: 28px;
+  padding: 30px;
+  -webkit-box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.3);
+  margin-bottom: 50px;
+}
+
+.experinces .full-width-colour h3 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.experinces .full-width-colour img {
+  width: 100%;
+  height: 200px;
+  -webkit-filter: brightness(0%);
+          filter: brightness(0%);
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    display: block;
+    padding: 20px 0;
+  }
+  nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  nav ul li {
+    display: inline-block;
+    padding: 8px;
+    margin: auto;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  header .hero {
+    padding: 100px;
+  }
+  header .hero h1 {
+    font-size: 60px;
+    line-height: 68px;
+    font-weight: 400;
+  }
+  header .hero h2 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+  header .hero h3 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+  .experinces .full-width-colour {
+    padding: 100px 200px;
+  }
+  .experinces .full-width-colour h3 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+  .experinces .full-width-colour img {
+    width: 100%;
+    -webkit-filter: brightness(0%);
+            filter: brightness(0%);
+  }
+}
+/*# sourceMappingURL=style.css.map */
